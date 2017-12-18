@@ -1,0 +1,42 @@
+Thread Safe (Lock Free) Concurrent Stack
+Author: Chunpai Wang
+Email:  cwang25@albany.edu
+Date:   10/28/2017
+
+
+Files:
+    README                  - this file
+    Makefile                - Makefile to compile all codes 
+    serial.c                - serial implementation 
+    parallel.c               - pthread implementation (lock free) of concurrent stack
+    GetNumbers.c            - used to read the numbers stored in numbers.txt
+    timing.c                - used to count the time
+    timing.h                - header file
+    stackHw.h                - header file
+    
+    numbers.txt              - where the input data stored
+
+    serial.out               - binary code
+    parallel.out             - binary code
+
+
+Use commmands:
+       make
+                :- to compile and get the corresponding binary codes 
+       
+       ./serial.out N 
+                :- N is number of iterations
+
+       ./parallel.out N num_threads
+                :- N is number of iterations
+                :- num_threads is the number of threads
+
+       make clean 
+                :- clear all binary codes and matrices files which store in .csv
+
+        
+
+Referrences:
+https://www.red-gate.com/simple-talk/blogs/inside-the-concurrent-collections-concurrentstack/
+http://www.cs.rochester.edu/~scott/papers/1998_JPDC_nonblocking.pdf
+
